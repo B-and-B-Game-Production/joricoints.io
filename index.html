@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            margin: 0 auto;
+            text-align: center;
+            background-color: rgb(81, 55, 31);
+        }
+        .headWind{
+            position: absolute;
+            left: 48%;
+            transform: translateX(-50%);
+            height: 100vh;
+            width: 450px;
+            background-color: rgb(118, 79, 43);
+        }
+        .buttonJorick {
+            position: absolute;
+            top: 45%;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 200px;
+            height: 200px;
+            background-color: rgb(255, 106, 0);
+            border-radius: 100px
+        }
+        .amountCoint{
+            position: absolute;
+            top: 40px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 40px;
+            color: rgb(255, 216, 0);
+
+        }
+    </style>
+    <title>Жорик coint</title>
+</head>
+<body>
+    <div class="headWind">
+        <p class="amountCoint" id="amountCoint">33</p>
+        <button class="buttonJorick" onclick="ClickMe()"></button>
+
+    </div>
+    <script>
+        var coint = 0
+        function ClickMe() {
+            var amount = document.getElementById("amountCoint");            
+            coint++
+            amount.innerText = coint + " Жориков"
+        }
+    </script>
+</body>
+</html>
